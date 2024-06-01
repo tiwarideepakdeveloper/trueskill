@@ -1,0 +1,1454 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="KreativDev" />
+  <meta name="description" content="Multi-Tenant, Course, Course Selling" />
+
+  <!-- Title -->
+  <title>TrueSkill - Coaching | Consulting</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="assets/images/logo/fav.png" type="image/x-icon" />
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com/" />
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+  <!-- Fontawesome Icon CSS -->
+  <link rel="stylesheet" href="assets/fonts/fontawesome/css/all.min.css" />
+  <!-- Icomoon Icon CSS -->
+  <link rel="stylesheet" href="assets/fonts/icomoon/style.css" />
+  <!-- Magnific Popup CSS -->
+  <link rel="stylesheet" href="assets/css/vendors/magnific-popup.min.css" />
+  <!-- NoUi Range Slider -->
+  <link rel="stylesheet" href="assets/css/vendors/nouislider.min.css" />
+  <!-- Swiper Slider -->
+  <link rel="stylesheet" href="assets/css/vendors/swiper-bundle.min.css" />
+  <!-- Nice Select -->
+  <link rel="stylesheet" href="assets/css/vendors/nice-select.css" />
+  <!-- AOS Animation CSS -->
+  <link rel="stylesheet" href="assets/css/vendors/aos.min.css" />
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="assets/css/vendors/animate.min.css" />
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="assets/css/responsive.css" />
+  <style>
+    .list,
+    li {
+      line-height: 34px;
+    }
+
+    .footer-area {
+      background-image: url("assets/images/banner/footer-2.jpg") !important;
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.9;
+    }
+
+    .bx-shaw {
+      /* box-shadow: 0 19px 38px rgba(62, 61, 61, 0.3), 0 15px 12px rgba(0,0,0,0.22); */
+      background-color: #6c42a1;
+      border-radius: 5px;
+    }
+
+    .cardone {
+      padding: 2% !important;
+    }
+
+    .t-head {
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 60px;
+      white-space: -1px;
+    }
+
+    .t-head h1 {
+      font-weight: bold;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
+    .card-footer {
+      color: white;
+      background-color: #f44b4b;
+      /* box-shadow: 0 19px 38px rgba(62, 61, 61, 0.3), 0 15px 12px rgba(0,0,0,0.22); */
+    }
+
+    .card-footer h3 {
+      color: white;
+      font-size: 34px !important;
+    }
+
+    .card-footer h6 {
+      color: white;
+      font-size: 25px !important;
+    }
+
+    .card-footer p {
+      color: white;
+    }
+
+    .bullet p {
+      color: white;
+      font-size: 23px;
+      text-decoration: underline;
+      text-underline-offset: 8px;
+    }
+
+    .bullet ul li {
+      color: white;
+    }
+
+    .students {
+      color: #f44b4b;
+      font-size: 18px;
+    }
+
+    .footers {
+      color: white;
+      background-color: #f44b4b;
+      border-radius: 5px;
+    }
+
+    .footers h3 {
+      color: white;
+      font-size: 29px !important;
+    }
+
+    .footers h6 {
+      color: white;
+      font-size: 20px !important;
+    }
+
+    .footers {
+      color: white;
+      background-color: #f44b4b;
+    }
+
+    .footers p {
+      color: white;
+    }
+
+    .questions p {
+      font-size: 17px;
+      margin-top: 1%;
+      font-weight: 600;
+      /* color: rgb(198, 57, 57); */
+    }
+
+    .amt {
+      color: #f44b4b;
+    }
+
+    .card-header {
+      background-color: #f44b4b;
+    }
+
+    .card-border {
+      border: 1px solid #f44b4b;
+      border-radius: 5px;
+    }
+
+    .checking li {
+      font-weight: bold;
+    }
+
+    .mentor-details h4 {
+      color: greenyellow;
+    }
+
+    .mentor-details ul li i {
+      color: greenyellow;
+    }
+
+    .mentor-details ul li {
+      color: rgb(255, 255, 255);
+    }
+
+    .mentor-details p {
+      color: white;
+    }
+
+    .list {
+      list-style: url(assets/images/icons8-horizontal-line-16.png);
+      /* Remove default bullet points */
+    }
+
+    a {
+      white-space: nowrap;
+
+
+    }
+  </style>
+</head>
+
+<body class="theme-color-1">
+  <!-- Preloader start -->
+  <div id="preLoader">
+    <div class="loader"></div>
+  </div>
+  <!-- Preloader end -->
+
+  <!-- Header-area start -->
+  <header class="header-area">
+    <!-- Start mobile menu -->
+    <div class="mobile-menu">
+      <div class="container">
+        <div class="mobile-menu-wrapper"></div>
+      </div>
+    </div>
+    <!-- End mobile menu -->
+
+    <div class="main-responsive-nav">
+      <div class="container">
+        <!-- Mobile Logo -->
+        <div class="logo">
+          <a href="index.html" target="_self">
+            <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/logo/logo200.png"
+              alt="Brand Logo" />
+          </a>
+        </div>
+        <!-- Menu toggle button -->
+        <button class="menu-toggler" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="main-navbar">
+      <div class="header-top bg-white py-3 mobile-item border-bottom">
+        <div class="container">
+          <div class="d-flex flex-wrap justify-content-end align-items-end" style="font-size: 14px">
+            <a href="mailTo:support@trueskill.in" class="icon-start" target="_blank" title="support@trueskill.in"
+              style="color: white !important; padding-bottom: 20px">
+              <i class="fal fa-envelope"></i>
+              support@trueskill.in </a>&ensp;&ensp;
+            <a href="https://wa.me/9381009246" class="icon-start" target="_blank" title="Whatsapp Number"
+              style="color: white !important; padding-bottom: 20px">
+              <i class="fab fa-whatsapp"></i>
+              +91 9381009246 </a>&ensp;&ensp;
+            <div class="social-link style-2 size-md mb-3" style="font-size: 14px">
+              <a href="https://instagram.com/trueskill.in?igshid=MzNlNGNkZWQ4Mg" target="_blank" title="instagram"><i
+                  class="fab fa-instagram" style="padding-bottom: 4px"></i></a>
+              <a href="https://www.linkedin.com/in/naveen-kumar-44646a1a2" target="_blank" title="Linked In"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/UnlockYourTrueSkill" target="_blank" title="Face Book"><i
+                  class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/TrueSkill_in" target="_blank" title="twitter"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com/@UnleashYourTrueSkill" target="_blank" title="youtube"><i
+                  class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-bottom">
+        <div class="container">
+          <nav class="navbar navbar-expand-lg">
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html" target="_self" title="TrueSkill">
+              <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/logo/logo200.png"
+                alt="Brand Logo" style="width: 150px; height: 50px" />
+            </a>
+            <!-- Navigation items -->
+            <div class="collapse navbar-collapse">
+              <ul id="mainMenu" class="navbar-nav mobile-item mx-auto">
+                <li class="nav-item" style="margin-inline: 7px">
+                  <a href="index.html" class="nav-link toggle">Home</a>
+                  <!--
+                                  <ul class="menu-dropdown">
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="index.html">Home Demo 1</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="index-3.html">Home Demo 2</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="index-4.html">Home Demo 3</a>
+                                      </li>
+                                  </ul>
+                                  -->
+                </li>
+                <li class="nav-item" style="margin-inline: 7px">
+                  <a href="#course" class="nav-link toggle" style="height: 83%">Courses <i class="fal fa-plus"></i></a>
+                  <ul class="menu-dropdown bg-dropdown" style="
+                      background-color: rgb(247, 245, 244);
+                      padding: 0%;
+                      border-radius: 5px;
+                      
+                      
+                    ">
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Business Intelligence<i
+                          class="fal fa-plus" style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 1%;
+                          border-radius: 5px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="Excel.html">MS Excel</a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="PowerBi.html">Power BI</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Data Analytics<i class="fal fa-plus"
+                          style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 1%;
+                          border-radius: 5px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="Excel.html">MS Excel</a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="PowerBi.html">Power BI</a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="Python.html">Python</a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="Sql.html">SQL</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Cloud Computing<i class="fal fa-plus"
+                          style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 1%;
+                          border-radius: 5px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="Azure.html">Azure</a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="Azure.html">AWS</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Artificial Intelligence<i
+                          class="fal fa-plus" style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 1%;
+                          border-radius: 5px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="Ai.html">AI Tools</a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item" style="margin-inline: 7px">
+                  <a href="#consultingServices" class="nav-link toggle" style="height: 83%">Consulting Services<i
+                      class="fal fa-plus"></i></a>
+                  <ul class="menu-dropdown bg-dropdown" style="
+                      background-color: rgb(247, 245, 244);
+                      padding: 0%;
+                      border-radius: 5px;
+                      
+                    ">
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Tax<i class="fal fa-plus"
+                          style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 0%;
+                          border-radius: 5px;
+                          width: 250px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="income-tax-return.html">Income Tax Returns Filing</a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="consulting-services.html">GST Consultancy</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Financial Services<i
+                          class="fal fa-plus" style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 0%;
+                          border-radius: 5px;
+                          width: 270px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="accounting.html" style="padding-left:5%">Accounting and
+                            FP&A Services </a>
+                        </li>
+
+                      </ul>
+                    </li>
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Business Intelligence<i
+                          class="fal fa-plus" style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 0%;
+                          border-radius: 5px;
+                          width: 250px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="data-analytics-services.html" style="padding-left:5%"> Excel
+                            Customized
+                            Templates
+                          </a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="data-analytics-services.html" style="padding-left:5%"> Power BI
+                            Visualizations
+                          </a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="data-analytics-services.html" style="padding-left:5%"> Python
+                            Business Insights
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Cloud Services<i class="fal fa-plus"
+                          style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 0%;
+                          border-radius: 5px;
+                          width: 220px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="cloud-services.html">Microsoft Azure</a>
+                        </li>
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="cloud-services.html">Amazon Web Services</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item" style="line-height: 24px">
+                      <a class="nav-link toggle" href="#" style="padding-left:7%">Product Design<i class="fal fa-plus"
+                          style="right: 11px"></i></a>
+                      <ul class="menu-dropdown bg-dropdown" style="
+                          background-color: rgb(247, 245, 244);
+                          padding: 0%;
+                          border-radius: 5px;
+                          width: 350px;
+                        ">
+                        <li class="nav-item" style="line-height: 24px">
+                          <a class="nav-link" href="web-services.html" style="padding-left:3%"> Web Design & App
+                            Development Services
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+
+                </li>
+                <li class="nav-item" style="margin-inline: 7px">
+                  <a class="nav-link" href="coach-consultant.html">Become Coach / Consultant
+                  </a>
+                  <!-- <ul class="menu-dropdown">
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="cart.html">Cart</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="wishlist.html">Wishlist</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="checkout.html">Checkout</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="faq.html">FAQ</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="login.html">Login</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="signup.html">Signup</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="error-404.html">404 Error</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="coming-soon.html">Coming Soon</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="terms-conditions.html">Terms &amp; Conditions</a>
+                                      </li>
+                                  </ul> -->
+                </li>
+                <!--<li class="nav-item">
+                                  <a href="contact-us.html" class="nav-link ">Contact Us</a>
+                                   <ul class="menu-dropdown">
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="blogs.html">Blogs</a>
+                                      </li>
+                                      <li class="nav-item">
+                                          <a class="nav-link" href="blog-single.html">Blog Single</a>
+                                      </li>
+                                  </ul> 
+                              </li>
+                              <li class="nav-item">
+                                  <a class="nav-link" href="contact.html">Contact</a>
+                              </li> -->
+              </ul>
+            </div>
+            <!-- <div class="more-option mobile-item">
+              <div class="item">
+                <div class="language">
+                                  <select class="niceselect">
+                                      <option value="1">English</option>
+                                      <option value="2">Chinese</option>
+                                      <option value="3">French</option>
+                                  </select>
+                              </div>
+              </div>
+              <div class="item">
+                <a href="login.html" class="btn-icon-text" target="_self" aria-label="User" title="User">
+                  <i class="fal fa-user"></i>
+                  <span>Login</span>
+                </a>
+              </div>
+            </div> -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="course-area latest" style="margin-top:10%;margin-bottom: 5%;">
+    <div class="container">
+      <div class="row" style="padding: 10%;padding-top: 2%;">
+        <div class="col-12">
+          <div class="section-title title-inline mb-30 color-primary" data-aos="fade-up">
+            <h2 class="title course mb-20 text-center" style="color: #000000" data-overlay-onload-show
+              data-popover-onload-show data-force-reveal data-partial-height="44" data-toggle="popover"
+              data-trigger="click">
+              PRIVACY <span> POLICY</span>
+            </h2>
+            <div class="quote">
+              <p class="text font-lg mb-2">
+                <b>Trueskill</b> (“us”, “we”, or “our”) operates the trueskill.in.in website (the “Service”).
+                This page is to inform you of our policies regarding the collection, use, and
+                disclosure of personal data when you use our Service and the choices you have
+                associated with that data.
+              </p>
+              <p class="text font-lg mb-5">
+                We utilize your information to give and improve the Service given by us. By
+                utilizing the Service, you consent to the gathering and utilization of data as for
+                this strategy. Except if generally characterized, terms utilized in this Privacy Policy
+                have indistinguishable implications from our Terms and Conditions, open from
+                trueskill.in.
+              </p>
+              <p class="text font-lg mb-2">
+              <h5>Definitions</h5>
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Service</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                Service is trueskill.in website which is operated by trueskill team.
+              </p>
+              <p class="text font-lg mb-2">
+              <h6> Personal Data</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                Individual Data implies information about a living person who can be
+                distinguished from those information (or from those and other data either in our
+                ownership or prone to come into our ownership).
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Usage Data</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                Utilization Data will be information gathered consequently either created by the
+                utilization of the Service or from the Service foundation itself (for instance, the
+                span of a page visit).
+              </p>
+              <p class="text font-lg mb-2">
+              <h6> Cookies</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                Cookies are small pieces of data stored on your device (computer or mobile
+                device).
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Data Controller</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                Information Controller implies the characteristic or legitimate individual who
+                (either alone or together or in the same way as different people) decides the
+                reasons for which and the way where any close to home data are, or are to be,
+                handled. With the end goal of this Privacy Policy, we are a Data Controller of your
+                Personal Data.
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Data Processors (or Service Providers)</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                Data Processor (or Service Provider) means any natural or legal person who
+                processes the data on behalf of the Data Controller. We may use the services of
+                various Service Providers in order to process your data more effectively.
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Data Subject (or User)
+              </h6>
+              </p>
+              <p class="text font-lg mb-2">
+                Data Subject is any living individual who is using our Service and is the subject of Personal Data.
+
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Information Collection And Use</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                We collect several information for various purposes to provide and improve our Service to you.
+
+              </p>
+              <p class="text font-lg mb-2 mt-5">
+              <h5>TYPES OF DATA COLLECTED</h5>
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Personal Data</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                While using our Service, we may ask you to provide us with certain personally identifiable information
+                that can be used to contact or identify you (“Personal Data”). Personally identifiable information may
+                include, but is not limited to:
+
+              </p>
+              <ul class="list text font-lg" style="color: #000000;">
+
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  Email address
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                  First name and last name
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  Phone number
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                  Address, State, Province, ZIP/Postal code, City
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                  Cookies and Usage Data
+
+                </li>
+
+
+              </ul>
+              <p class="text font-lg mb-2">
+                We may use your Personal Data to contact you with newsletters, marketing or promotional materials and
+                other information that may be of interest to you. You may opt out of receiving any, or all, of these
+                communications from us by following the unsubscribe link or instructions provided in any email we send.
+
+
+              </p>
+              <p class="text font-lg mb-2">
+              <h6>Usage Data</h6>
+              </p>
+              <p class="text font-lg mb-2">
+                We may likewise gather data on how the Service is gotten and utilized (“Usage Data”). This Usage Data
+                may incorporate data, for example, your PC’s Internet Protocol address (for example IP address), program
+                type, program form, the pages of our Service that you visit, the time and date of your visit, the time
+                spent on those pages, extraordinary gadget identifiers and other symptomatic information.
+
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Tracking Cookies Data
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                We use cookies and comparative following advances to follow the action on our Service and hold certain
+                data.
+
+              </p>
+              <p class="text font-lg mb-1">
+                Cookies are records with a limited quantity of information that may incorporate an unknown exceptional
+                identifier.
+
+
+              </p>
+              <p class="text font-lg mb-1">
+                Cookies are sent to your program from a site and placed on your gadget. Following advancements
+                additionally utilized are signals, labels, and contents to gather and track data and to improve and
+                examine our Service.
+
+
+              </p>
+              <p class="text font-lg mb-1">
+                You can teach your program to reject all threats or to notify when a threat is being sent.
+                Notwithstanding, on the off chance that you don’t acknowledge cookies, you will be unable to utilize a
+                few parts of our Service.
+
+
+              </p>
+              <p class="text font-lg mb-1">
+                Examples of Cookies we use:
+              </p>
+              <ul class="list text font-lg" style="color: #000000;">
+
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  Session Cookies: We use Session Cookies to operate our Service.
+
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                  Preference Cookies: We use Preference Cookies to remember your preferences and various settings.
+
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  Security Cookies: We use Security Cookies for security purposes.
+
+
+
+
+                </li>
+
+
+
+              </ul>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Use of Data
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                trueskill uses the collected data for various purposes:
+
+              </p>
+              <ul class="list text font-lg" style="color: #000000;">
+
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To provide and maintain our Service
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                  To notify you about changes to our Service
+
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To allow you to participate in interactive features of our Service when you choose to do so
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To provide customer support
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To gather analysis or valuable information so that we can improve our Service
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To monitor the usage of our Service
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To detect, prevent and address technical issues
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To provide you with news, special offers, and general information about other goods, services and
+                  events which we offer that are similar to those that you have already purchased or enquired about
+                  unless you have opted not to receive such information
+                </li>
+
+
+
+              </ul>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Legal Basis for Processing Personal Data Under General Data Protection Regulation (GDPR).
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                We may process your Personal Data because:
+
+              </p>
+              <ul class="list text font-lg" style="color: #000000;">
+
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  We need to perform a contract with you
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="600">
+                  The processing is in our legitimate interests and it’s not overridden by your rights
+
+
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  For payment processing purposes
+
+
+                </li>
+                <li data-aos="fade-up" data-aos-delay="400">
+
+                  To comply with the law
+
+
+
+                </li>
+
+
+
+              </ul>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Retention of Data
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                trueskill will hold your Personal Data just for whatever length of time that is important for the
+                reasons set out in this Privacy Policy. We will hold and utilize your Personal Data to the degree
+                important to consent to our lawful commitments (for instance, on the off chance that we are required to
+                hold your information to follow material laws), resolve debates, and authorize our lawful understandings
+                and strategies.
+
+              </p>
+              <p class="text font-lg mb-1">
+                trueskill will likewise hold Usage Data for inward investigation purposes. Use Data is commonly held for
+                a shorter time frame, aside from when this information is utilized to reinforce the security or to
+                improve the usefulness of our Service, or we are legitimately committed to hold this information for
+                longer timespans.
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Transfer Of Data
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                Your information, including Personal Data, may be transferred to — and maintained on — computers located
+                outside of your state, province, country or other governmental jurisdiction where the data protection
+                laws may differ than those from your jurisdiction.
+
+              </p>
+              <p class="text font-lg mb-1">
+                Your consent to this Privacy Policy followed by your submission of such information represents your
+                agreement to that transfer.
+
+
+              </p>
+              <p class="text font-lg mb-1">
+                trueskill will take all steps reasonably necessary to ensure that your data is treated securely and in
+                accordance with this Privacy Policy and no transfer of your Personal Data will take place to an
+                organization or a country unless there are adequate controls in place including the security of your
+                data and other personal information.
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Security Of Data
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                The security of your information is critical to us, however remember that no strategy for transmission
+                over the Internet, or technique for electronic capacity is 100% secure. While we endeavor to utilize
+                industrially worthy intends to ensure your Personal Data, we can’t ensure its supreme security.
+
+              </p>
+              <p class="text font-lg mb-1">
+                In the event that you wish to be educated what Personal Data we hold about you and on the off chance
+                that you need it to be expelled from our frameworks, it would be ideal if you get in touch with us.
+
+              </p>
+              <p class="text font-lg mb-1">
+                In specific conditions, you have the accompanying information insurance rights:
+              </p>
+              <p class="text font-lg mb-1">
+                The privilege to access, update or erase the data we have on you. At whatever point made conceivably,
+                you can access, update or solicit erasure of your Personal Data legitimately inside your record settings
+                area. In the event that you can’t play out these activities yourself if it’s not too much trouble get in
+                touch with us to help you.
+
+              </p>
+              <p class="text font-lg mb-1">
+                The privilege to protest. You reserve the privilege to the item to our preparing of your Personal Data.
+              </p>
+              <p class="text font-lg mb-1">
+                The privilege of limitation. You reserve the privilege to demand that we limit the preparation of your
+                own data.
+
+              </p>
+              <p class="text font-lg mb-1">
+                The privilege to information versatility. You reserve the option to be given a duplicate of the data we
+                have on you in an organized, machine-comprehensible, and generally utilized arrangement.
+
+              </p>
+              <p class="text font-lg mb-1">
+                The privilege to pull back assent. You additionally reserve the option to pull back your assent whenever
+                where trueskill depended on your agreement to process your own data.
+              </p>
+              <p class="text font-lg mb-1">
+                If you don’t mind note that we may request that you check your personality before reacting to such asks.
+              </p>
+              <p class="text font-lg mb-1">
+                You reserve the privilege to grumble to a Data Protection Authority about our accumulation and
+                utilization of your Personal Data. For more data, if you don’t mind contact your nearby information
+                assurance specialist in the European Economic Area (EEA) Service Providers.
+
+              </p>
+              <p class="text font-lg mb-1">
+                We may employ third-party companies and individuals to facilitate our Service (“Service Providers”), to
+                provide the Service on our behalf, to perform Service-related services, or to assist us in analyzing how
+                our Service is used.
+
+              </p>
+              <p class="text font-lg mb-1">
+                These third parties have access to your Personal Data only to perform these tasks on our behalf and are
+                obligated not to disclose or use it for any other purpose.
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>ANALYTICS
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                We may utilize outsider Service Providers to screen and break down the utilization of our Service.
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Google Analytics
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                Google Analytics is a web examination administration offered by Google that tracks and reports site
+                traffic. Google utilizes the information gathered to track and screen the utilization of our Service.
+                This information is imparted to other Google administrations. Google may utilize the gathered
+                information to contextualize and customize the advertisements of its own publicizing system.
+
+              </p>
+              <p class="text font-lg mb-1">
+                You can quit having made your movement on the Service accessible to Google Analytics by introducing the
+                Google Analytics quit program add-on. The extra counteracts the Google Analytics JavaScript (ga.js,
+                analytics.js, and dc.js) from offering data to Google Analytics about visits movement.
+
+              </p>
+              <p class="text font-lg mb-1">
+                For more information on the privacy practices of Google, please visit the Google Privacy Terms web page:
+                <a href=" http://www.google.com/intl/en/policies/privacy/">
+                  http://www.google.com/intl/en/policies/privacy/
+                </a>
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>BEHAVIORAL REMARKETING
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                Facebook Inc. uses remarketing services to advertise on third party websites to you after you visited
+                our Service. We and our third-party vendors use cookies to inform, optimize and serve ads based on your
+                past visits to our Service.
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Google AdWords
+
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                Google AdWords remarketing service is provided by Google Inc.
+
+              </p>
+              <p class="text font-lg mb-1">
+                You can opt-out of Google Analytics for Display Advertising and customize the Google Display Network ads
+                by visiting the Google Ads Settings page: <a
+                  href="http://www.google.com/settings/ads">http://www.google.com/settings/ads</a>
+
+              </p>
+              <p class="text font-lg mb-1">
+                Google also recommends installing the Google Analytics Opt-out Browser Add-on <a
+                  href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a>
+                for your web browser. Google Analytics Opt-out Browser Add-on
+                provides visitors with the ability to prevent their data from being collected and used by Google
+                Analytics.
+
+              </p>
+              <p class="text font-lg mb-1">
+                For more information on the privacy practices of Google, please visit the Google Privacy Terms web
+                page:<a href=" http://www.google.com/intl/en/policies/privacy/">
+                  http://www.google.com/intl/en/policies/privacy/</a>.
+
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Facebook
+
+
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                Facebook remarketing service is provided by Facebook Inc.
+              </p>
+              <p class="text font-lg mb-2">
+                You can learn more about interest-based advertising from Facebook by visiting this page: <a
+                  href="https://www.facebook.com/help/164968693837950">https://www.facebook.com/help/164968693837950</a>
+
+              </p>
+              <p class="text font-lg mb-2">
+                To opt-out from Facebook’s interest-based ads follow these instructions from Facebook:<a
+                  href=" https://www.facebook.com/help/568137493302217">
+                  https://www.facebook.com/help/568137493302217</a>
+
+              </p>
+              <p class="text font-lg mb-2">
+                Facebook adheres to the Self-Regulatory Principles for Online Behavioral Advertising established by the
+                Digital Advertising Alliance. You can also opt-out from Facebook and other participating companies
+                through the Digital Advertising Alliance in the USA <a
+                  href="http://www.aboutads.info/choices/">http://www.aboutads.info/choices/</a>, the Digital
+                Advertising Alliance of Canada in Canada <a href="http://youradchoices.ca/">http://youradchoices.ca/</a>
+                or the European Interactive Digital
+                Advertising Alliance in Europe <a
+                  href="http://www.youronlinechoices.eu/">http://www.youronlinechoices.eu/</a>, or opt-out using your
+                mobile device
+                settings.
+              </p>
+              <p class="text font-lg mb-2">
+                For more information on the privacy practices of Facebook, please visit Facebook’s Data Policy:
+                <a href="https://www.facebook.com/privacy/explanation">https://www.facebook.com/privacy/explanation</a>
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>PAYMENTS
+
+
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                We may provide paid products and/or services within the Service. In that case, we use third-party
+                services for payment processing (e.g. payment processors).
+
+              </p>
+              <p class="text font-lg mb-1">
+              <p class="text font-lg mb-1">
+                We will not store or collect your payment card details. That information is provided directly to our
+                third-party payment processors whose use of your personal information is governed by their Privacy
+                Policy. These payment processors adhere to the standards set by PCI-DSS as managed by the PCI Security
+                Standards Council, which is a joint effort of brands like Visa, Mastercard, American Express, and
+                Discover. PCI-DSS requirements help ensure the secure handling of payment information.
+
+              </p>
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>The payment processors we work with are:
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                Their Privacy Policy can be viewed at
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+
+              <h6>instamojo
+              </h6>
+
+              </p>
+              <p class="text font-lg mb-1">
+                <a href="https://www.instamojo.com/privacy
+                  ">https://www.instamojo.com/privacy
+                </a>
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Razorpay
+              </h6>
+
+              </p>
+              <p class="text font-lg mb-1">
+                <a href="https://razorpay.com/privacy/
+
+                  ">https://razorpay.com/privacy/
+
+                </a>
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6>Links To Other Sites
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                Our Service may contain links to other sites that are not operated by us. If you click on a third-party
+                link, you will be directed to that third party’s site. We strongly advise you to review the Privacy
+                Policy of every site you visit.
+
+              </p>
+              <p class="text font-lg mb-1">
+                We have no control over and assume no responsibility for the content, privacy policies, or practices of
+                any third-party sites or services.
+
+              </p>
+              <p class="text font-lg mb-4">
+              <h6> Children’s Privacy
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                We do not knowingly collect personally identifiable information from anyone under the age of 18. If you
+                are a parent or guardian and you are aware that your Children has provided us with Personal Data, please
+                contact us. If we become aware that we have collected Personal Data from children without verification
+                of parental consent, we take steps to remove that information from our servers.
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6> Changes To This Privacy Policy
+
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new
+                Privacy Policy on this page.
+
+              </p>
+              <p class="text font-lg mb-1">
+                We will let you know via email and/or a prominent notice on our Service, prior to the change becoming
+                effective and update the “effective date” at the top of this Privacy Policy.
+              </p>
+              <p class="text font-lg mb-1">
+                You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy
+                Policy are effective when they are posted on this page.
+
+              </p>
+              <p class="text font-lg mb-1 mt-4">
+              <h6> Contact Us
+
+
+
+              </h6>
+              </p>
+              <p class="text font-lg mb-1">
+                If you have any questions about this Privacy Policy, please contact us by email: <a
+                  href="mailTo:hello@trueskill.in">hello@trueskill.in</a>
+
+              </p>
+
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- Shapes -->
+    <!-- <div class="shape">
+            <img class="shape-1 lazyload" src="assets/images/placeholder.png" data-src="assets/images/shape/shape-4.png" alt="Shape">
+            <img class="shape-2 lazyload" src="assets/images/placeholder.png" data-src="assets/images/shape/shape-6.png" alt="Shape">
+            <img class="shape-3 lazyload" src="assets/images/placeholder.png" data-src="assets/images/shape/shape-2.png" alt="Shape">
+        </div> -->
+  </section>
+
+  <!-- Footer-area start -->
+  <footer class="footer-area" style="background-image: url('assets/images/banner/footer-2.jpg') !important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.9;">
+    <div class="footer-top pt-40 p-10">
+      <div class="container">
+        <div class="row gx-xl-5 justify-content-between">
+          <div class="col-lg-6 col-sm-6 col-sm-12">
+            <div class="footer-widget" data-aos="fade-up" data-aos-delay="100">
+              <!-- Logo -->
+              <div class="logo mb-10">
+                <a class="navbar-brand" href="index.html" target="_self" title="Link">
+                  <img class="lazyload" src="assets/images/placeholder.png" data-src="assets/images/logo/Truewhite.png"
+                    alt="Brand Logo" />
+                </a>
+              </div>
+              <p align="justify">
+                True Skill is a Professional Online Coaching and Consulting
+                Platform led by a group of Passionate and Committed Working
+                Professionals & Industry Experts from diverse domains. Sit
+                back and relax, let us handle your responsibilities with
+                expertise and care so you can focus on taking your job
+                performance to the next level (or) growing your business!
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-6 col-sm-12" style="padding-left: 10%;">
+            <!-- <div data-aos="fade-up" data-aos-delay="200" -->
+            <!--   style="display: flex;justify-content: end;align-items: center;padding-bottom: 4%;"> -->
+            <!--   <h5 style="color:whitesmoke;">Useful Links</h5> -->
+            <!-- </div> -->
+
+            <div class="footer-widget " style="max-width: 200px; margin-left: auto;" data-aos="fade-up"
+              data-aos-delay="200">
+              <h5 style="color:whitesmoke;">Useful Links</h5>
+
+              <ul class="footer-links text-right">
+                <li
+                  style="display: flex;flex-direction: row;align-items: center;transition: font-size 0.1s; margin-left: auto;"
+                  onmouseover="this.style.fontSize='105%'" onmouseout="this.style.fontSize='100%'">
+                  <i class="fas fa-arrow-right"></i>
+                  <a href="contact-us.html" target="_self" title="link" style="margin-left: 3%;">Contact Us</a>
+                </li>
+
+                <li style="display: flex;flex-direction: row;align-items: center;transition: font-size 0.1s;"
+                  onmouseover="this.style.fontSize='105%'" onmouseout="this.style.fontSize='100%'">
+                  <i class="fas fa-arrow-right"></i>
+                  <a href="refund-policy.html" target="_self" title="link" style="margin-left: 3%;">Refund
+                    Policy
+                  </a>
+                </li>
+                <li style="display: flex;flex-direction: row;align-items: center;transition: font-size 0.1s;"
+                  onmouseover="this.style.fontSize='103%'" onmouseout="this.style.fontSize='100%'">
+                  <i class="fas fa-arrow-right"></i>
+                  <a href="term-of-service.html" target="_self" title="link" style="margin-left: 3%;">Terms of
+                    Services
+                  </a>
+                </li>
+                <li style="display: flex;flex-direction: row;align-items: center;transition: font-size 0.1s;"
+                  onmouseover="this.style.fontSize='105%'" onmouseout="this.style.fontSize='100%'">
+                  <i class="fas fa-arrow-right"></i>
+                  <a href="privacy-policy.html" target="_self" title="link" style="margin-left: 3%;">Privacy
+                    Policy
+                  </a>
+                </li>
+                <li style="display: flex;flex-direction: row;align-items: center;"
+                  onmouseover="this.style.fontSize='105%'" onmouseout="this.style.fontSize='100%'">
+                  <i class="fas fa-arrow-right"></i>
+                  <a href="about-us.html" target="_self" title="link"
+                    style="margin-left: 3%;transition: font-size 0.3s;">About Us
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+
+
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="copy-right-area border-top ptb-5 pt-1">
+        <div class="container">
+          <div class="copy-right-content">
+            <div class="social-link rounded style-2 justify-content-center mb-10">
+              <a href="https://instagram.com/trueskill.in?igshid=MzNlNGNkZWQ4Mg" target="_blank" title="instagram"><i
+                  class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/naveen-kumar-44646a1a2" target="_blank" title="Linked In"><i
+                  class="fab fa-linkedin"></i></a>
+              <a href="https://www.facebook.com/UnlockYourTrueSkill" target="_blank" title="Face Book"><i
+                  class="fab fa-facebook"></i></a>
+              <a href="https://twitter.com/TrueSkill_in" target="_blank" title="twitter"><i
+                  class="fab fa-twitter"></i></a>
+              <a href="https://www.youtube.com/@UnleashYourTrueSkill" target="_blank" title="youtube"><i
+                  class="fab fa-youtube"></i></a>
+              <a href="mailTo:support@trueskill.in" class="icon-start" target="_blank" title="support@trueskill.in"><i
+                  class="fal fa-envelope"></i>
+              </a>
+              <a href="https://wa.me/9381009246" class="icon-start" target="_blank" title="Whatsapp Number">
+                <i class="fab fa-whatsapp"></i></a>
+            </div>
+            <span style="color: #cdc7c7">
+              Copyright <i class="fal fa-copyright"></i><span id="footerDate" style="color: #cdc7c7"></span>
+              <a href="index.html" target="_self" title="TrueSkill" class="color-primary">TrueSkill</a>.
+              All
+              Rights
+              Reserved
+            </span>
+          </div>
+        </div>
+      </div>
+
+  </footer>
+  <!-- Footer-area end-->
+
+  <!-- Go top -->
+  <div class="go-top" style="background-color: #f44b4b">
+    <i class="fal fa-long-arrow-up"></i>
+  </div>
+
+  <!-- Magic Cursor -->
+  <!-- <div class="cursor"></div> -->
+  <!-- <div class="sticky-footer">
+        <div class="container">
+            <div class="row d-flex mt-2" style="display: inline-flex;">
+                <div class="col-sm-3" style="width: 170px;">
+
+                    <span style="color: rgb(247, 102, 49);">Rs. 299</span>
+                    <span style="color: white;margin-left: 17px;">Rs.1499</span>
+
+                </div>
+                <div class="col-sm-9" style="    width: 87%;">
+
+                    <span style="color: white;">Offer Ends in</span>
+                    <span style="color: white;margin-left: 17px;">23 <sub>H&nbsp;</sub>04
+                        <sub>M&nbsp;</sub>07<sub>S</sub></span>
+
+
+                    <button type="button" class="btn btn-primary btn-sm rounded-pill " style="float: right;">
+                        TrueSkillNow</button>
+
+                </div>
+
+
+            </div>
+        </div>
+
+    </div> -->
+  <div class="sticky-footer">
+    <div class="container">
+      <div class="row d-flex mt-2" style="display: inline-flex">
+        <div class="col-sm-3" style="width: 180px">
+          <span style="color: rgb(247, 102, 49)">Rs. 299</span>
+          <span style="
+                color: white;
+                margin-left: 17px;
+                text-decoration: line-through;
+              ">Rs. 1499</span>
+        </div>
+        <div class="col-sm-9" style="width: 86%">
+          <span style="color: white">Offer Ends in</span>
+          <span id="countdown" style="color: white; margin-left: 17px"></span>
+          <button type="button" class="btn btn-primary btn-sm rounded-pill"
+            style="float: right; background-color: #f44b4b">
+            Unlock your TrueSkill
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- for countdown in sticky-footer -->
+  <script>
+    // Calculate the offer end time (1 hour from now)
+    const durationInMilliseconds = 60 * 60 * 1000; // 1 hour in milliseconds
+    const offerEndTime = new Date().getTime() + durationInMilliseconds;
+
+    // Update the countdown every second
+    const countdown = setInterval(function () {
+      const now = new Date().getTime();
+      const distance = offerEndTime - now;
+
+      // Calculate remaining time
+      const hours = Math.floor(
+        (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+      );
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the countdown
+      document.getElementById("countdown").innerHTML = `${hours
+        .toString()
+        .padStart(2, "0")} <sub>H&nbsp;</sub>${minutes
+          .toString()
+          .padStart(2, "0")} <sub>M&nbsp;</sub>${seconds
+            .toString()
+            .padStart(2, "0")}<sub>S</sub>`;
+
+      // If the countdown is over, display a message
+      if (distance < 0) {
+        clearInterval(countdown);
+        document.getElementById("countdown").innerHTML = "Offer expired";
+      }
+    }, 1000);
+  </script>
+  <!-- Jquery JS -->
+  <script src="assets/js/vendors/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="assets/js/vendors/bootstrap.min.js"></script>
+  <!-- Counter JS -->
+  <script src="assets/js/vendors/jquery.counterup.min.js"></script>
+  <!-- Nice Select JS -->
+  <script src="assets/js/vendors/jquery.nice-select.min.js"></script>
+  <!-- Magnific Popup JS -->
+  <script src="assets/js/vendors/jquery.magnific-popup.min.js"></script>
+  <!-- Noui Range Slider JS -->
+  <script src="assets/js/vendors/nouislider.min.js"></script>
+  <!-- Swiper Slider JS -->
+  <script src="assets/js/vendors/swiper-bundle.min.js"></script>
+  <!-- Lazysizes -->
+  <script src="assets/js/vendors/lazysizes.min.js"></script>
+  <!-- AOS JS -->
+  <script src="assets/js/vendors/aos.min.js"></script>
+  <!-- Mouse Hover JS -->
+  <script src="assets/js/vendors/mouse-hover-move.js"></script>
+  <!-- Main script JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
